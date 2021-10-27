@@ -4,4 +4,12 @@ public class Produto {
   String nome;
   double preco;
   double desconto;
+
+  double precoComDesconto() {
+    return preco * (1 - desconto);
+  }
+
+  double precoComDesconto(double descontoDogerente) {
+    return preco * (1 - desconto + descontoDogerente);
+  }
 }

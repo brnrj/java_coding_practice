@@ -14,8 +14,13 @@ public class DataTeste {
 
     var d3 = d2.obterDataFormatada(d2.dia, d2.mes, d2.ano);
 
+    var d4 = new Data();
+    var d5 = new Data("27","11","2021");
+
     System.out.println(d3);
     System.out.printf("Eu nasci no dia %s/%s/%s\n", d2.dia, d2.mes, d2.ano);
-    System.out.printf("Hoje é dia %s/%s/%s", d1.dia, d1.mes, d1.ano);
+    System.out.printf("Hoje é dia %s/%s/%s\n", d1.dia, d1.mes, d1.ano);
+    System.out.println(d4.obterDataFormatada(d4.dia, d4.mes, d4.ano));
+    System.out.println(d5.obterDataFormatada(d5.dia, d5.mes, d5.ano));
   }
 }

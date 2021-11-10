@@ -2,8 +2,8 @@ package oo.heranca.desafio;
 
 public class Corrida {
   public static void main(String[] args) {
-    Civic civic = new Civic();
-    Ferrari ferrari = new Ferrari();
+    Civic civic = new Civic(240);
+    Ferrari ferrari = new Ferrari(330);
 
     System.out.println("Velocidade do Honda Civic => " + civic.velocidade + "km/h");
     System.out.println("Velocidade da Ferrari => " + ferrari.velocidade + "km/h");

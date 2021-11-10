@@ -33,5 +33,7 @@ public class Corrida {
     System.out.println("Velocidade do Honda Civic => " + civic.velocidade + "km/h");
     System.out.println("Velocidade da Ferrari => " + ferrari.velocidade + "km/h");
 
+    System.out.println(ferrari.velocidadeDoAr());
+
   }
 }

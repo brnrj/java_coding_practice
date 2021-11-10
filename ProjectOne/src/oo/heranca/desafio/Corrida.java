@@ -9,7 +9,9 @@ public class Corrida {
     System.out.println("Velocidade da Ferrari => " + ferrari.velocidade + "km/h");
 
     ferrari.acelerar();
+    ferrari.ligarTurbo();
     ferrari.acelerar();
+    ferrari.desligarTurbo();
     ferrari.acelerar();
     ferrari.acelerar();
     civic.acelerar();

@@ -1,9 +1,9 @@
 package excecao;
 
 public class Aluno {
-  final String name;
-  final double nota;
-  final boolean bomComportamento;
+  public final String name;
+  public final double nota;
+  public final boolean bomComportamento;
   
   @Override
   public int hashCode() {

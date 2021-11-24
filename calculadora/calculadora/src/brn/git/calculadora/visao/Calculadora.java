@@ -9,9 +9,10 @@ public class Calculadora extends JFrame{
   public Calculadora() {
 
     organizarLayout();
-    setSize(232, 322);
-    setLocationRelativeTo(null);
-    setDefaultCloseOperation(EXIT_ON_CLOSE);
+    setSize(232, 322); // define o tamanho do JFrame
+    // setUndecorated(true); tirar a barra do sistema
+    setLocationRelativeTo(null); // posiciona no centro do monitor
+    setDefaultCloseOperation(EXIT_ON_CLOSE); // encerra a aplicação quando a calculadora é fechada
     setVisible(true);
   }
 

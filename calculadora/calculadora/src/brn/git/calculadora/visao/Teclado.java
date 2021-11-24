@@ -3,11 +3,14 @@ package brn.git.calculadora.visao;
 import java.awt.Color;
 import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
+import javax.swing.JButton;
 import javax.swing.JPanel;
 
 @SuppressWarnings("serial")
-public class Teclado extends JPanel{
+public class Teclado extends JPanel implements ActionListener {
   private final Color COR_CINZA_ESCURO = new Color(68,68,68);
   private final Color COR_CINZA_CLARO = new Color(99,99,99);
   private final Color COR_LARANJA = new Color(242,163,60);
@@ -54,5 +57,13 @@ public class Teclado extends JPanel{
     c.gridy = y;
     Botao botao = new Botao(texto, cor);
     add(botao, c);
+    botao.addActionListener(this);
+  }
+  @Override
+  public void actionPerformed(ActionEvent e) {
+    if(e.getSource() instanceof JButton) {
+      JButton botao = (JButton) e.getSource();
+      System.out.println(botao.getText());
+    }
   }
 }
